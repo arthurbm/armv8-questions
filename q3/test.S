@@ -2,7 +2,14 @@
 test:
 	LDUR X10, [X0,#0] // Load a
 	LDUR X11, [X1,#0] // Load b
-
-Exit:
-    
-	BR X30
+	MOV X12, 0x1F800 // 1F800 = 11111100000000000
+	AND X13, X10, X12 // The 6 digits between slot 16 and 11 of are going to be 1, the rest is going to be 0
+	LSL X13, X13, #15 // Shift left
+	MOV X14, 0xFC000000 // FC000000 = 11111100000000000000000000000000
+	MOV X16, 0xFFFFFFFFFFFFFFFF
+	EOR X15, X14, X16 // X15 = 0b00000011111111111111111111111111
+	AND X11, X11, X15
+	ORR X11, X11, X12
+	STUR X10, [X0, #0]
+	STUR X11, [X1, #0]
+	BR X30    

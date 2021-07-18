@@ -5,7 +5,7 @@ extern void test(lli *a, lli *b, lli *c, lli *x);
 
 int main(void)
 {
-    lli a, b, c, x;
+    lli a = 1, b = 2, c = 25, x;
     test(&a, &b, &c, &x);
     printf("x = %lld\n", x);
     printf("\n");

@@ -1,3 +1,5 @@
+# Lista 2 - Infraestrutura de hardware
+
 1. [0.5] Encontre a menor sequência de instruções LEGv8 que implementa a código abaixo,
 onde a, b e m são variáveis inteiras na memória. Teste com os seguintes valores de a,b
 e m:

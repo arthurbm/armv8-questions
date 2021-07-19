@@ -4,7 +4,6 @@ test:
 	MOV X18, XZR // Indice
 
 Loop:
-	// COLOCAR XZR NO X0 DEPOIS
 	ADD X19, X0, X18
 	LDRSB X11, [X19, #0]
 	CBZ X11, Exit

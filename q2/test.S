@@ -7,11 +7,11 @@ test:
 
     ADD X12, XZR, XZR // x = 0
     CMP X9, XZR
-   	B.LT Exit // a > 0 == false?
-    CMP X10, #64
-    B.GT Exit // b <= 64 == false?
-    CMP X11, #24
-    B.LE Exit // c > 24 == false?
+   	B.LT Exit // (a < 0) == true?, that is, (a >= 0) == false?
+    CMP X10, #32
+    B.GT Exit // (b > 32) == true, that is, (b <= 32) == false?
+    CMP X11, #25
+    B.LE Exit // (c <= 25) == true?, that is, (c > 25) == false?
     ADD X12, X12, #1
 
 Exit:

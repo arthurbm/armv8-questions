@@ -8,7 +8,7 @@ int main(void)
     lli a, b, m ;
 
     a = 5;
-    b = 5;
+    b = 9;
     test(&a, &b, &m);
     printf("First case\n");
     printf("a = %lld\n", a);
@@ -16,8 +16,8 @@ int main(void)
     printf("m = %lld\n", m);
     printf("\n");
 
-    a = 10;
-    b = 3;
+    a = 12;
+    b = 12;
     test(&a, &b, &m);
     printf("Second case\n");
     printf("a = %lld\n", a);
@@ -25,8 +25,8 @@ int main(void)
     printf("m = %lld\n", m);
     printf("\n");
 
-    a = 3;
-    b = 10;
+    a = 15;
+    b = 7;
     test(&a, &b, &m);
     printf("Third case\n");
     printf("a = %lld\n", a);

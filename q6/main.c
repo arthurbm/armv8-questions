@@ -6,7 +6,7 @@ lli test(char *num);
 
 int main(void)
 {
-    char c[] = "ARTHUR"; // 6 vows
+    char c[] = "arthur"; // 6 letters, 2 vows
     lli count = test(c);
     printf("Count: %lld\n", count);
     return 0;

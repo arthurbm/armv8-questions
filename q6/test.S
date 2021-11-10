@@ -9,15 +9,15 @@ Loop:
 	CBZ X11, Exit
 	ADD X18, X18, #1
 
-	CMP X11, #65 // A
+	CMP X11, #97 // a
 	B.EQ Inc
-	CMP X11, #69 // E
+	CMP X11, #101 // e
 	B.EQ Inc
-	CMP X11, #73 // I
+	CMP X11, #105 // i
 	B.EQ Inc
-	CMP X11, #79 // O
+	CMP X11, #111 // o
 	B.EQ Inc
-	CMP X11, #85 // U
+	CMP X11, #117 // u
 	B.EQ Inc
 
 	B.NE Loop

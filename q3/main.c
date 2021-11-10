@@ -5,7 +5,7 @@ extern void test(lli *a, lli *b);
 
 int main(void)
 {
-    lli a = 0, b=0xFFFFFFFFFFFFFFFF;
+    lli a = 0xffff0000ffff0000, b=0x0000ffff0000ffff;
 
     printf("Before\n");
     printf("a = %llx\n", a);
